@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 8.3\nBuild version 8E162",
+  "commitish" : "0.0.1",
+  "iOS" : [
+    {
+      "hash" : "60c12620969d9a017a3f10915d9df9b8c101778f5c1a62011d02a89f5af3eb74",
+      "name" : "Base64"
+    }
+  ]
+}

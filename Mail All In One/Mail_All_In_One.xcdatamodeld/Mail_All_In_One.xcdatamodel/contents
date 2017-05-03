@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AllMail" representedClassName="AllMail" syncable="YES" codeGenerationType="class">
+        <attribute name="count" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Draft" representedClassName="Draft" syncable="YES" codeGenerationType="class">
+        <attribute name="count" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MailHeader" representedClassName="MailHeader" syncable="YES" codeGenerationType="class">
+        <attribute name="arrayHead" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="captionAdresser" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="captionDate" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="captionTheme" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="Send" representedClassName="Send" syncable="YES" codeGenerationType="class">
+        <attribute name="count" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Spam" representedClassName="Spam" syncable="YES" codeGenerationType="class">
+        <attribute name="count" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Starred" representedClassName="Starred" syncable="YES" codeGenerationType="class">
+        <attribute name="count" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Tresh" representedClassName="Tresh" syncable="YES" codeGenerationType="class">
+        <attribute name="count" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserAcountEnter" representedClassName="UserAcountEnter" syncable="YES" codeGenerationType="class">
+        <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MailHeader" positionX="-63" positionY="0" width="128" height="103"/>
+        <element name="UserAcountEnter" positionX="-171" positionY="213" width="128" height="73"/>
+        <element name="AllMail" positionX="-270" positionY="-9" width="128" height="73"/>
+        <element name="Draft" positionX="-270" positionY="96" width="128" height="75"/>
+        <element name="Spam" positionX="-2" positionY="267" width="128" height="75"/>
+        <element name="Tresh" positionX="342" positionY="-54" width="128" height="75"/>
+        <element name="Send" positionX="124" positionY="-45" width="128" height="75"/>
+        <element name="Starred" positionX="241" positionY="105" width="128" height="75"/>
+    </elements>
+</model>

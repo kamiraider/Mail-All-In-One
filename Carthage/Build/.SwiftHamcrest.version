@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 8.3\nBuild version 8E162",
+  "commitish" : "fa2e93d6ff6e7b60ccaa6ceb8757d171ac9ae0ed",
+  "iOS" : [
+    {
+      "hash" : "610a044583433d67ab05cd9aad962eafbdb93ed5491328c0b04101116bf9548d",
+      "name" : "Hamcrest"
+    }
+  ]
+}

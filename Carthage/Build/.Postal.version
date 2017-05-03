@@ -1,0 +1,14 @@
+{
+  "xcodeVersion" : "Xcode 8.3\nBuild version 8E162",
+  "commitish" : "v0.4.1",
+  "iOS" : [
+    {
+      "hash" : "3298eb5ceb0d8986dfc06ef7c49100854ee34385bde4d9cfb44182651364abef",
+      "name" : "Result"
+    },
+    {
+      "hash" : "397f57894c8b892b82eb9543df4510bed9b2a092fe0300f4cccb18e61ffbb0bb",
+      "name" : "Postal"
+    }
+  ]
+}

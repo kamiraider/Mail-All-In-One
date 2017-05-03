@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		803136C61EA38AB100730B55 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803136C51EA38AB100730B55 /* RealmSwift.framework */; };
+		803136C81EA38AB400730B55 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803136C71EA38AB400730B55 /* Realm.framework */; };
+		803136CB1EA39F3300730B55 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803136CA1EA39F3300730B55 /* Realm.swift */; };
+		803136CD1EA3A04F00730B55 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803136CC1EA3A04F00730B55 /* Realm.framework */; };
+		803136CE1EA3A04F00730B55 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 803136CC1EA3A04F00730B55 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		803136D01EA3A05800730B55 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803136CF1EA3A05800730B55 /* RealmSwift.framework */; };
+		803136D11EA3A05800730B55 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 803136CF1EA3A05800730B55 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		80B8806B1EA8B82A0035C084 /* SaveMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B8806A1EA8B82A0035C084 /* SaveMail.swift */; };
+		80ED6B621E9CE08D009189DA /* TextFildMailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED6B611E9CE08D009189DA /* TextFildMailController.swift */; };
+		FB0CA77D1E757E7500F8F96A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0CA77C1E757E7500F8F96A /* AppDelegate.swift */; };
+		FB0CA77F1E757E7500F8F96A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0CA77E1E757E7500F8F96A /* ViewController.swift */; };
+		FB0CA7821E757E7500F8F96A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0CA7801E757E7500F8F96A /* Main.storyboard */; };
+		FB0CA7871E757E7500F8F96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0CA7861E757E7500F8F96A /* Assets.xcassets */; };
+		FB0CA78A1E757E7500F8F96A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0CA7881E757E7500F8F96A /* LaunchScreen.storyboard */; };
+		FB0CA7951E75824300F8F96A /* AddAcountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0CA7941E75824300F8F96A /* AddAcountController.swift */; };
+		FB4A75791E813495003C692E /* Postal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A75781E813495003C692E /* Postal.framework */; };
+		FB4A75811E813C5E003C692E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A757A1E813497003C692E /* Result.framework */; };
+		FB4A75821E813C5E003C692E /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A757A1E813497003C692E /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB4A75841E813C5E003C692E /* Postal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A75781E813495003C692E /* Postal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB4A75871E81905C003C692E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4A75861E81905C003C692E /* Extension.swift */; };
+		FB6589DC1E85789A00E5458F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6589DB1E85789A00E5458F /* TableViewCell.swift */; };
+		FBF5B1361E7BFE47003F3D8F /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF5B1351E7BFE46003F3D8F /* MailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB4A757C1E813B60003C692E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4A75851E813C5E003C692E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				803136CE1EA3A04F00730B55 /* Realm.framework in Embed Frameworks */,
+				FB4A75821E813C5E003C692E /* Result.framework in Embed Frameworks */,
+				803136D11EA3A05800730B55 /* RealmSwift.framework in Embed Frameworks */,
+				FB4A75841E813C5E003C692E /* Postal.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		803136BF1EA38A5F00730B55 /* Hamcrest.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Hamcrest.framework.dSYM; path = Carthage/Build/iOS/Hamcrest.framework.dSYM; sourceTree = "<group>"; };
+		803136C01EA38A5F00730B55 /* Realm.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Realm.framework.dSYM; path = Carthage/Build/iOS/Realm.framework.dSYM; sourceTree = "<group>"; };
+		803136C11EA38A5F00730B55 /* RealmSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RealmSwift.framework.dSYM; path = Carthage/Build/iOS/RealmSwift.framework.dSYM; sourceTree = "<group>"; };
+		803136C51EA38AB100730B55 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		803136C71EA38AB400730B55 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		803136CA1EA39F3300730B55 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		803136CC1EA3A04F00730B55 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		803136CF1EA3A05800730B55 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		80B8806A1EA8B82A0035C084 /* SaveMail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveMail.swift; sourceTree = "<group>"; };
+		80ED6B611E9CE08D009189DA /* TextFildMailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFildMailController.swift; sourceTree = "<group>"; };
+		FB0CA7791E757E7500F8F96A /* Mail All In One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mail All In One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0CA77C1E757E7500F8F96A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB0CA77E1E757E7500F8F96A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB0CA7811E757E7500F8F96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB0CA7861E757E7500F8F96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB0CA7891E757E7500F8F96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB0CA78B1E757E7500F8F96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0CA7941E75824300F8F96A /* AddAcountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAcountController.swift; sourceTree = "<group>"; };
+		FB4A75781E813495003C692E /* Postal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Postal.framework; path = Carthage/Build/iOS/Postal.framework; sourceTree = "<group>"; };
+		FB4A757A1E813497003C692E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		FB4A75861E81905C003C692E /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		FB6589DB1E85789A00E5458F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FBF5B1351E7BFE46003F3D8F /* MailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB0CA7761E757E7500F8F96A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4A75811E813C5E003C692E /* Result.framework in Frameworks */,
+				FB4A75791E813495003C692E /* Postal.framework in Frameworks */,
+				803136D01EA3A05800730B55 /* RealmSwift.framework in Frameworks */,
+				803136C81EA38AB400730B55 /* Realm.framework in Frameworks */,
+				803136C61EA38AB100730B55 /* RealmSwift.framework in Frameworks */,
+				803136CD1EA3A04F00730B55 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB0CA7701E757E7500F8F96A = {
+			isa = PBXGroup;
+			children = (
+				FB0CA77B1E757E7500F8F96A /* Mail All In One */,
+				FB0CA77A1E757E7500F8F96A /* Products */,
+				FB4A75771E813495003C692E /* Frameworks */,
+				803136CC1EA3A04F00730B55 /* Realm.framework */,
+				803136CF1EA3A05800730B55 /* RealmSwift.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		FB0CA77A1E757E7500F8F96A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB0CA7791E757E7500F8F96A /* Mail All In One.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB0CA77B1E757E7500F8F96A /* Mail All In One */ = {
+			isa = PBXGroup;
+			children = (
+				FB0CA77E1E757E7500F8F96A /* ViewController.swift */,
+				FB0CA7941E75824300F8F96A /* AddAcountController.swift */,
+				FBF5B1351E7BFE46003F3D8F /* MailViewController.swift */,
+				80ED6B611E9CE08D009189DA /* TextFildMailController.swift */,
+				FB0CA7801E757E7500F8F96A /* Main.storyboard */,
+				FB0CA7931E757F9100F8F96A /* Others */,
+				FB9E211E1E85487C00B60DAE /* Support files */,
+			);
+			path = "Mail All In One";
+			sourceTree = "<group>";
+		};
+		FB0CA7931E757F9100F8F96A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				FB0CA77C1E757E7500F8F96A /* AppDelegate.swift */,
+				FB0CA7861E757E7500F8F96A /* Assets.xcassets */,
+				FB0CA78B1E757E7500F8F96A /* Info.plist */,
+				FB0CA7881E757E7500F8F96A /* LaunchScreen.storyboard */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		FB4A75771E813495003C692E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				803136C71EA38AB400730B55 /* Realm.framework */,
+				803136C51EA38AB100730B55 /* RealmSwift.framework */,
+				803136BF1EA38A5F00730B55 /* Hamcrest.framework.dSYM */,
+				803136C01EA38A5F00730B55 /* Realm.framework.dSYM */,
+				803136C11EA38A5F00730B55 /* RealmSwift.framework.dSYM */,
+				FB4A757A1E813497003C692E /* Result.framework */,
+				FB4A75781E813495003C692E /* Postal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB9E211E1E85487C00B60DAE /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				FB6589DB1E85789A00E5458F /* TableViewCell.swift */,
+				803136CA1EA39F3300730B55 /* Realm.swift */,
+				80B8806A1EA8B82A0035C084 /* SaveMail.swift */,
+				FB4A75861E81905C003C692E /* Extension.swift */,
+			);
+			name = "Support files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB0CA7781E757E7500F8F96A /* Mail All In One */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0CA78E1E757E7500F8F96A /* Build configuration list for PBXNativeTarget "Mail All In One" */;
+			buildPhases = (
+				FB0CA7751E757E7500F8F96A /* Sources */,
+				FB0CA7761E757E7500F8F96A /* Frameworks */,
+				FB0CA7771E757E7500F8F96A /* Resources */,
+				FB4A757C1E813B60003C692E /* CopyFiles */,
+				FB4A75851E813C5E003C692E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mail All In One";
+			productName = "Mail All In One";
+			productReference = FB0CA7791E757E7500F8F96A /* Mail All In One.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB0CA7711E757E7500F8F96A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = AMProgram;
+				TargetAttributes = {
+					FB0CA7781E757E7500F8F96A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WX7EXQ2XD6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FB0CA7741E757E7500F8F96A /* Build configuration list for PBXProject "Mail All In One" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB0CA7701E757E7500F8F96A;
+			productRefGroup = FB0CA77A1E757E7500F8F96A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB0CA7781E757E7500F8F96A /* Mail All In One */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB0CA7771E757E7500F8F96A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0CA78A1E757E7500F8F96A /* LaunchScreen.storyboard in Resources */,
+				FB0CA7871E757E7500F8F96A /* Assets.xcassets in Resources */,
+				FB0CA7821E757E7500F8F96A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB0CA7751E757E7500F8F96A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0CA7951E75824300F8F96A /* AddAcountController.swift in Sources */,
+				80B8806B1EA8B82A0035C084 /* SaveMail.swift in Sources */,
+				803136CB1EA39F3300730B55 /* Realm.swift in Sources */,
+				FB6589DC1E85789A00E5458F /* TableViewCell.swift in Sources */,
+				80ED6B621E9CE08D009189DA /* TextFildMailController.swift in Sources */,
+				FB0CA77F1E757E7500F8F96A /* ViewController.swift in Sources */,
+				FB4A75871E81905C003C692E /* Extension.swift in Sources */,
+				FB0CA77D1E757E7500F8F96A /* AppDelegate.swift in Sources */,
+				FBF5B1361E7BFE47003F3D8F /* MailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB0CA7801E757E7500F8F96A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB0CA7811E757E7500F8F96A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB0CA7881E757E7500F8F96A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB0CA7891E757E7500F8F96A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB0CA78D1E757E7500F8F96A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB0CA7901E757E7500F8F96A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WX7EXQ2XD6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Mail All In One/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AMProgram.Mail-All-In-One";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB0CA7741E757E7500F8F96A /* Build configuration list for PBXProject "Mail All In One" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0CA78D1E757E7500F8F96A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0CA78E1E757E7500F8F96A /* Build configuration list for PBXNativeTarget "Mail All In One" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0CA7901E757E7500F8F96A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB0CA7711E757E7500F8F96A /* Project object */;
+}
