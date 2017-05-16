@@ -56,16 +56,6 @@ class AddAcountController: UIViewController {
         // теперь надо узнать какой именно редирект нужен у меня не верный
         
     } */
-/*
-     https://accounts.google.com/o/oauth2/v2/auth?
-     scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.metadata.readonly&
-     access_type=offline&
-     include_granted_scopes=true&
-     state=state_parameter_passthrough_value&
-     redirect_uri=http%3A%2F%2Foauth2.example.com%2Fcallback&
-     response_type=code&
-     client_id=client_id
- */
     
     @IBOutlet weak var login: UITextField!
     @IBOutlet weak var password: UITextField!
