@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		803136C61EA38AB100730B55 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803136C51EA38AB100730B55 /* RealmSwift.framework */; };
-		803136C81EA38AB400730B55 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803136C71EA38AB400730B55 /* Realm.framework */; };
+		8029AE191ECB297F00FE1F55 /* Postal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8029AE141ECB297F00FE1F55 /* Postal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8029AE1A1ECB297F00FE1F55 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8029AE151ECB297F00FE1F55 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8029AE1B1ECB297F00FE1F55 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8029AE161ECB297F00FE1F55 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8029AE1C1ECB297F00FE1F55 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8029AE171ECB297F00FE1F55 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8029AE1D1ECB297F00FE1F55 /* SwiftKeychainWrapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8029AE181ECB297F00FE1F55 /* SwiftKeychainWrapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		803136CB1EA39F3300730B55 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803136CA1EA39F3300730B55 /* Realm.swift */; };
-		803136CD1EA3A04F00730B55 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803136CC1EA3A04F00730B55 /* Realm.framework */; };
-		803136CE1EA3A04F00730B55 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 803136CC1EA3A04F00730B55 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		803136D01EA3A05800730B55 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803136CF1EA3A05800730B55 /* RealmSwift.framework */; };
-		803136D11EA3A05800730B55 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 803136CF1EA3A05800730B55 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		80B8806B1EA8B82A0035C084 /* SaveMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B8806A1EA8B82A0035C084 /* SaveMail.swift */; };
 		80ED6B621E9CE08D009189DA /* TextFildMailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED6B611E9CE08D009189DA /* TextFildMailController.swift */; };
 		FB0CA77D1E757E7500F8F96A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0CA77C1E757E7500F8F96A /* AppDelegate.swift */; };
@@ -22,10 +21,6 @@
 		FB0CA7871E757E7500F8F96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0CA7861E757E7500F8F96A /* Assets.xcassets */; };
 		FB0CA78A1E757E7500F8F96A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0CA7881E757E7500F8F96A /* LaunchScreen.storyboard */; };
 		FB0CA7951E75824300F8F96A /* AddAcountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0CA7941E75824300F8F96A /* AddAcountController.swift */; };
-		FB4A75791E813495003C692E /* Postal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A75781E813495003C692E /* Postal.framework */; };
-		FB4A75811E813C5E003C692E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A757A1E813497003C692E /* Result.framework */; };
-		FB4A75821E813C5E003C692E /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A757A1E813497003C692E /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FB4A75841E813C5E003C692E /* Postal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A75781E813495003C692E /* Postal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB4A75871E81905C003C692E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4A75861E81905C003C692E /* Extension.swift */; };
 		FB6589DC1E85789A00E5458F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6589DB1E85789A00E5458F /* TableViewCell.swift */; };
 		FBF5B1361E7BFE47003F3D8F /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF5B1351E7BFE46003F3D8F /* MailViewController.swift */; };
@@ -47,10 +42,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				803136CE1EA3A04F00730B55 /* Realm.framework in Embed Frameworks */,
-				FB4A75821E813C5E003C692E /* Result.framework in Embed Frameworks */,
-				803136D11EA3A05800730B55 /* RealmSwift.framework in Embed Frameworks */,
-				FB4A75841E813C5E003C692E /* Postal.framework in Embed Frameworks */,
+				8029AE191ECB297F00FE1F55 /* Postal.framework in Embed Frameworks */,
+				8029AE1A1ECB297F00FE1F55 /* Realm.framework in Embed Frameworks */,
+				8029AE1B1ECB297F00FE1F55 /* RealmSwift.framework in Embed Frameworks */,
+				8029AE1C1ECB297F00FE1F55 /* Result.framework in Embed Frameworks */,
+				8029AE1D1ECB297F00FE1F55 /* SwiftKeychainWrapper.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,14 +54,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		803136BF1EA38A5F00730B55 /* Hamcrest.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Hamcrest.framework.dSYM; path = Carthage/Build/iOS/Hamcrest.framework.dSYM; sourceTree = "<group>"; };
-		803136C01EA38A5F00730B55 /* Realm.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Realm.framework.dSYM; path = Carthage/Build/iOS/Realm.framework.dSYM; sourceTree = "<group>"; };
-		803136C11EA38A5F00730B55 /* RealmSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RealmSwift.framework.dSYM; path = Carthage/Build/iOS/RealmSwift.framework.dSYM; sourceTree = "<group>"; };
-		803136C51EA38AB100730B55 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
-		803136C71EA38AB400730B55 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		8029AE141ECB297F00FE1F55 /* Postal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Postal.framework; path = Carthage/Build/iOS/Postal.framework; sourceTree = "<group>"; };
+		8029AE151ECB297F00FE1F55 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		8029AE161ECB297F00FE1F55 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		8029AE171ECB297F00FE1F55 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		8029AE181ECB297F00FE1F55 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftKeychainWrapper.framework; path = Carthage/Build/iOS/SwiftKeychainWrapper.framework; sourceTree = "<group>"; };
 		803136CA1EA39F3300730B55 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
-		803136CC1EA3A04F00730B55 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
-		803136CF1EA3A05800730B55 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		80B8806A1EA8B82A0035C084 /* SaveMail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveMail.swift; sourceTree = "<group>"; };
 		80ED6B611E9CE08D009189DA /* TextFildMailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFildMailController.swift; sourceTree = "<group>"; };
 		FB0CA7791E757E7500F8F96A /* Mail All In One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mail All In One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,8 +70,6 @@
 		FB0CA7891E757E7500F8F96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB0CA78B1E757E7500F8F96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB0CA7941E75824300F8F96A /* AddAcountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAcountController.swift; sourceTree = "<group>"; };
-		FB4A75781E813495003C692E /* Postal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Postal.framework; path = Carthage/Build/iOS/Postal.framework; sourceTree = "<group>"; };
-		FB4A757A1E813497003C692E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		FB4A75861E81905C003C692E /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FB6589DB1E85789A00E5458F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FBF5B1351E7BFE46003F3D8F /* MailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
@@ -88,26 +80,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB4A75811E813C5E003C692E /* Result.framework in Frameworks */,
-				FB4A75791E813495003C692E /* Postal.framework in Frameworks */,
-				803136D01EA3A05800730B55 /* RealmSwift.framework in Frameworks */,
-				803136C81EA38AB400730B55 /* Realm.framework in Frameworks */,
-				803136C61EA38AB100730B55 /* RealmSwift.framework in Frameworks */,
-				803136CD1EA3A04F00730B55 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8029AE1E1ECB2B2400FE1F55 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				8029AE141ECB297F00FE1F55 /* Postal.framework */,
+				8029AE151ECB297F00FE1F55 /* Realm.framework */,
+				8029AE161ECB297F00FE1F55 /* RealmSwift.framework */,
+				8029AE171ECB297F00FE1F55 /* Result.framework */,
+				8029AE181ECB297F00FE1F55 /* SwiftKeychainWrapper.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 		FB0CA7701E757E7500F8F96A = {
 			isa = PBXGroup;
 			children = (
 				FB0CA77B1E757E7500F8F96A /* Mail All In One */,
 				FB0CA77A1E757E7500F8F96A /* Products */,
-				FB4A75771E813495003C692E /* Frameworks */,
-				803136CC1EA3A04F00730B55 /* Realm.framework */,
-				803136CF1EA3A05800730B55 /* RealmSwift.framework */,
+				8029AE1E1ECB2B2400FE1F55 /* Framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,20 +138,6 @@
 				FB0CA7881E757E7500F8F96A /* LaunchScreen.storyboard */,
 			);
 			name = Others;
-			sourceTree = "<group>";
-		};
-		FB4A75771E813495003C692E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				803136C71EA38AB400730B55 /* Realm.framework */,
-				803136C51EA38AB100730B55 /* RealmSwift.framework */,
-				803136BF1EA38A5F00730B55 /* Hamcrest.framework.dSYM */,
-				803136C01EA38A5F00730B55 /* Realm.framework.dSYM */,
-				803136C11EA38A5F00730B55 /* RealmSwift.framework.dSYM */,
-				FB4A757A1E813497003C692E /* Result.framework */,
-				FB4A75781E813495003C692E /* Postal.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FB9E211E1E85487C00B60DAE /* Support files */ = {

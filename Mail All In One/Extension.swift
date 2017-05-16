@@ -18,7 +18,6 @@ extension String {
             }
         }
     }
-    
 }
 
 

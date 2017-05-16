@@ -1,2 +1,3 @@
-github "snipsco/Postal"
-github "realm/realm-cocoa"
+github "snipsco/Postal" 
+github "realm/realm-cocoa" 
+github "jrendel/SwiftKeychainWrapper" 

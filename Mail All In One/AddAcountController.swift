@@ -7,27 +7,24 @@
 
 import UIKit
 import RealmSwift
+import SafariServices
+import SwiftKeychainWrapper
 
 class AddAcountController: UIViewController {
 
-    private let realmLogins = RealmLogins()
     private let realm = try! Realm()
     
     @IBOutlet weak var errorPrint: UILabel!
     
     @IBAction func add(_ sender: UIButton) {
-        
-        let realmLoginGet = realm.objects(RealmLogins.self)
         errorPrint.isHidden = true
         
         if login.text != "", password.text != "" , (login.text?.hasSuffix("@gmail.com"))! {
-            if String(describing: realmLoginGet) == "Results<RealmLogins> (\n\n)" ||
-                String(describing: realmLoginGet) == "RealmLogins {\u{A}\u{9}login = ;\u{A}\u{9}pass = ;\u{A}}" {
-                try! realm.write {
-                    realmLogins.login = login.text!
-                    realmLogins.pass  = password.text!
-                    realm.add(realmLogins)
-                }
+            
+            if KeychainWrapper.standard.string(forKey: "Login") == nil {
+                
+                KeychainWrapper.standard.set(login.text!, forKey: "Login")
+                KeychainWrapper.standard.set(password.text!, forKey: "Pass")
             } else {
                 errorPrint.text = "Аккаунт на данном устройстве уже создан"
                 errorPrint.isHidden = false
@@ -38,28 +35,69 @@ class AddAcountController: UIViewController {
         }
     }
     
+/*
+    private func getToken () {
+        // параметры запроса
+        let scope = "https://mail.google.com/"
+        let access_type = "online"
+        let include_granted_scopes = "true"
+        let state = "state_parameter_passthrough_value"
+        let redirect_uri = "http%3A%2F%2Foauth2.example.com%2Fcallback"
+        //let redirect_uri = "http://localhost:8080"
+        let response_type = "code"
+        let clientID = "154606389410-9ahkls4ff1rt88omue8r73u7i4otcrtv.apps.googleusercontent.com"
+        
+        
+        //let requestURL = "https://accounts.google.com/o/oauth2/auth?scope=" + scope + "&access_type=offline&prompt=consent&redirect_uri=" + uri + "&client_id=" + clientID
+        
+        let requestURL = "https://accounts.google.com/o/oauth2/v2/auth?scope=" + scope + "&access_type=" + access_type + "&include_granted_scopes" + include_granted_scopes + "&state=" + state + "&redirect_uri=" + redirect_uri + "&response_type=" + response_type + "&client_id=" + clientID
+        
+        self.openUrlWithSafariVC(requestURL)
+        // теперь надо узнать какой именно редирект нужен у меня не верный
+        
+    } */
+/*
+     https://accounts.google.com/o/oauth2/v2/auth?
+     scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.metadata.readonly&
+     access_type=offline&
+     include_granted_scopes=true&
+     state=state_parameter_passthrough_value&
+     redirect_uri=http%3A%2F%2Foauth2.example.com%2Fcallback&
+     response_type=code&
+     client_id=client_id
+ */
+    
     @IBOutlet weak var login: UITextField!
     @IBOutlet weak var password: UITextField!
     
     @IBAction func deleteAcount () {
-        
-        let realmLoginDel = realm.objects(RealmLogins.self)
-        //print(realmLoginDel)
-        try! realm.write({
-            realm.delete(realmLoginDel)
-        })
+        KeychainWrapper.standard.removeObject(forKey: "Login")
+        KeychainWrapper.standard.removeObject(forKey: "Pass")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         errorPrint.isHidden = true
-        
-        let realmLogins = realm.objects(RealmLogins.self)
-        if String(describing: realmLogins) != "Results<RealmLogins> (\n\n)",
-            String(describing: realmLogins) != "RealmLogins {\u{A}\u{9}login = ;\u{A}\u{9}pass = ;\u{A}}" {
+        if KeychainWrapper.standard.string(forKey: "Login") != nil {
             errorPrint.text = "Аккаунт на данном устройстве уже создан"
             errorPrint.isHidden = false
         }
     }
 }
 
+typealias SafariDelegate = AddAcountController
+extension SafariDelegate : SFSafariViewControllerDelegate {
+    
+    // dismiss SFSafariViewController (Done button)
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    // present SFSafariViewController modally
+    fileprivate func openUrlWithSafariVC(_ urlstring:String) {
+        let sfvc = SFSafariViewController(url: URL(string: urlstring)!, entersReaderIfAvailable: true)
+        sfvc.delegate = self
+        self.present(sfvc, animated: true, completion: nil)
+    }
+}
+ 

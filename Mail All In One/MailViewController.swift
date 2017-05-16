@@ -8,6 +8,7 @@
 import UIKit
 import Postal
 import RealmSwift
+import SwiftKeychainWrapper
 
 class MailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -142,9 +143,11 @@ class MailViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let realmLogins = realm.objects(RealmLogins.self)
         let realmChosenFolder = realm.objects(RealmChosenFolder.self)
-        getAllMailRealm(login: realmLogins[0].login, password: realmLogins[0].pass, folder: getFolderIndex(name: realmChosenFolder[0].chosenFolder), folderSegueName: realmChosenFolder[0].chosenFolder)
+        getAllMailRealm(login: KeychainWrapper.standard.string(forKey: "Login")!,
+                        password: KeychainWrapper.standard.string(forKey: "Pass")!,
+                        folder: getFolderIndex(name: realmChosenFolder[0].chosenFolder),
+                        folderSegueName: realmChosenFolder[0].chosenFolder)
     }
  
     override func viewDidDisappear(_ animated: Bool) {

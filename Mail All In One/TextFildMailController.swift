@@ -8,6 +8,7 @@
 import UIKit
 import Postal
 import RealmSwift
+import SwiftKeychainWrapper
 
 class TextFildMailController: UIViewController {
     
@@ -19,9 +20,8 @@ class TextFildMailController: UIViewController {
     @IBOutlet weak var messageBody: UITextView!
     
     public func getMessageBody (uid: Int, folder: String) {
-        let realmLogins = realm.objects(RealmLogins.self)
-        let acount = realmLogins[0]
-        let postal = Postal(configuration: .gmail(login: acount.login, password: .plain(acount.pass)))
+        let postal = Postal(configuration: .gmail(login: KeychainWrapper.standard.string(forKey: "Login")!,
+                                                  password: .plain(KeychainWrapper.standard.string(forKey: "Pass")!)))
         postal.connect { result in return }
         
         let index = NSIndexSet(index: uid)
@@ -103,8 +103,6 @@ class TextFildMailController: UIViewController {
             realmFolder[UserDefaults.standard.object(forKey: "row") as! Int].messageBody = message
             realm.add(realmFolder)
         }
-        let new = realm.objects(RAllMail.self)
-        print(new)
     }
 
     // sent setting for response and set header and previously saved check message

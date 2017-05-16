@@ -17,11 +17,6 @@ import Foundation
 import RealmSwift
 
 
-class RealmLogins: Object {
-    dynamic var login = ""
-    dynamic var pass = ""
-}
-
 class RealmChosenFolder: Object {
     dynamic var chosenFolder = ""
 }

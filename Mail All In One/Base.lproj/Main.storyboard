@@ -343,7 +343,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vhs-tf-YVu"/>
         <segue reference="aBs-SU-ZgB"/>
+        <segue reference="vhs-tf-YVu"/>
     </inferredMetricsTieBreakers>
 </document>

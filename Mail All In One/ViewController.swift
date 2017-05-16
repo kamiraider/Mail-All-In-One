@@ -7,6 +7,7 @@
 
 import UIKit
 import RealmSwift
+import SwiftKeychainWrapper
 
 class ViewController: UIViewController {
     
@@ -14,10 +15,7 @@ class ViewController: UIViewController {
     
     @IBAction func mailList(_ sender: UIButton) {
         let realmChosenFolder = RealmChosenFolder()
-        let logins = realm.objects(RealmLogins.self)
-        if String(describing: logins) != "Results<RealmLogins> (\n\n)",
-            String(describing: logins) !=  "RealmLogins {\u{A}\u{9}login = ;\u{A}\u{9}pass = ;\u{A}}" {
-            
+        if KeychainWrapper.standard.string(forKey: "Login") != nil {
             realmChosenFolder.chosenFolder = sender.currentTitle!
             try! realm.write({
                 realm.add(realmChosenFolder)
