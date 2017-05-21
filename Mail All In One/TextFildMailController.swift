@@ -19,7 +19,7 @@ class TextFildMailController: UIViewController {
     @IBOutlet weak var theme: UILabel!
     @IBOutlet weak var messageBody: UITextView!
     
-    public func getMessageBody (uid: Int, folder: String) {
+    private func getMessageBody (uid: Int, folder: String) {
         let postal = Postal(configuration: .gmail(login: KeychainWrapper.standard.string(forKey: "Login")!,
                                                   password: .plain(KeychainWrapper.standard.string(forKey: "Pass")!)))
         postal.connect { result in return }

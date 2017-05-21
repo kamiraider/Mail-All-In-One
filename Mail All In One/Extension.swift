@@ -97,23 +97,3 @@ extension Results {
         return array
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -26,11 +26,11 @@ class MailViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.reloadData()
     }
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return saveMail.retriveCount()
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MailCell", for: indexPath) as! TableViewCell
         let currentFolder = realm.objects(RealmChosenFolder.self)
      
@@ -64,7 +64,7 @@ class MailViewController: UIViewController, UITableViewDelegate, UITableViewData
         return retutnCell(realmCell: realmArray, index: indexPath.row, cell: cell, currentFolder: String(describing: currentFolder))
     }
     
-    func retutnCell <T: RMail>(realmCell: Results<T>, index: Int, cell: TableViewCell, currentFolder: String) -> UITableViewCell {
+    private func retutnCell <T: RMail>(realmCell: Results<T>, index: Int, cell: TableViewCell, currentFolder: String) -> UITableViewCell {
         
         if currentFolder != "Results<RealmChosenFolder> (\n\n)",
             currentFolder != "RealmChosenFolder {\u{A}\u{9}chosenFolder = ;\u{A}}"
@@ -81,7 +81,7 @@ class MailViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     // the edit button (is not working now)
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    internal func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             //cellsArray.remove(at: indexPath.row)
             //UserDefaults.standard.set(cellsArray, forKey: "StageArray")

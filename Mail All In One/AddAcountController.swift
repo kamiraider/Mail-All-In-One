@@ -35,28 +35,6 @@ class AddAcountController: UIViewController {
         }
     }
     
-/*
-    private func getToken () {
-        // параметры запроса
-        let scope = "https://mail.google.com/"
-        let access_type = "online"
-        let include_granted_scopes = "true"
-        let state = "state_parameter_passthrough_value"
-        let redirect_uri = "http%3A%2F%2Foauth2.example.com%2Fcallback"
-        //let redirect_uri = "http://localhost:8080"
-        let response_type = "code"
-        let clientID = "154606389410-9ahkls4ff1rt88omue8r73u7i4otcrtv.apps.googleusercontent.com"
-        
-        
-        //let requestURL = "https://accounts.google.com/o/oauth2/auth?scope=" + scope + "&access_type=offline&prompt=consent&redirect_uri=" + uri + "&client_id=" + clientID
-        
-        let requestURL = "https://accounts.google.com/o/oauth2/v2/auth?scope=" + scope + "&access_type=" + access_type + "&include_granted_scopes" + include_granted_scopes + "&state=" + state + "&redirect_uri=" + redirect_uri + "&response_type=" + response_type + "&client_id=" + clientID
-        
-        self.openUrlWithSafariVC(requestURL)
-        // теперь надо узнать какой именно редирект нужен у меня не верный
-        
-    } */
-    
     @IBOutlet weak var login: UITextField!
     @IBOutlet weak var password: UITextField!
     
@@ -76,6 +54,7 @@ class AddAcountController: UIViewController {
 }
 
 typealias SafariDelegate = AddAcountController
+
 extension SafariDelegate : SFSafariViewControllerDelegate {
     
     // dismiss SFSafariViewController (Done button)
@@ -91,3 +70,25 @@ extension SafariDelegate : SFSafariViewControllerDelegate {
     }
 }
  
+extension AddAcountController {
+    
+    private func getToken () {
+        // параметры запроса
+        let scope = "https://mail.google.com/"
+        let access_type = "online"
+        let include_granted_scopes = "true"
+        let state = "state_parameter_passthrough_value"
+        let redirect_uri = "com.googleusercontent.apps.154606389410-9ahkls4ff1rt88omue8r73u7i4otcrtv"
+        //let redirect_uri = "http://localhost:8080"
+        let response_type = "code"
+        let clientID = "154606389410-9ahkls4ff1rt88omue8r73u7i4otcrtv.apps.googleusercontent.com"
+        
+        
+        //let requestURL = "https://accounts.google.com/o/oauth2/auth?scope=" + scope + "&access_type=offline&prompt=consent&redirect_uri=" + uri + "&client_id=" + clientID
+        
+        let requestURL = "https://accounts.google.com/o/oauth2/v2/auth?scope=" + scope + "&access_type=" + access_type + "&include_granted_scopes" + include_granted_scopes + "&state=" + state + "&redirect_uri=" + redirect_uri + "&response_type=" + response_type + "&client_id=" + clientID
+        
+        self.openUrlWithSafariVC(requestURL)
+        // теперь надо узнать какой именно редирект нужен у меня не верный
+    }
+}
