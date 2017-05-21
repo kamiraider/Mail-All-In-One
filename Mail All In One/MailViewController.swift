@@ -98,9 +98,9 @@ class MailViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             for i in 1...mailCount {
                 let index = NSIndexSet(index: Int(i))
-                postal.fetchMessages(folder, uids: index as IndexSet, flags: [ .fullHeaders ], onMessage: { email in
+                postal.fetchMessages(folder, uids: index as IndexSet, flags: [ .fullHeaders ], onMessage: { [weak self] email in
                     // Break pesponse when view is closed
-                    if self.stopChangeTableView { return }
+                    if (self?.stopChangeTableView)! { return }
                     // perform save date
                     let adreesMan = String(describing: email.header?.from)
                     let themeEmail = String(describing: email.header?.subject)
@@ -109,9 +109,9 @@ class MailViewController: UIViewController, UITableViewDelegate, UITableViewData
                         var date = dateEmail.cutBetweenCharacters(from: "2", to: " +"),
                         let theme = themeEmail.cutBetweenCharacters(from: "(\"", to: "\")") {
                         date = "2" + date
-                        self.saveAndCheckMail(adresser: adress, theme: theme, date: date, uid: String(describing: email.uid), folder: folderSegueName)
+                        self?.saveAndCheckMail(adresser: adress, theme: theme, date: date, uid: String(describing: email.uid), folder: folderSegueName)
                     }
-                    self.tableView.reloadData()
+                    self?.tableView.reloadData()
                 }, onComplete: { error in if let error = error { print("an error occured: \(error)") } })
             }
         }, onComplete: { error in if let error = error { print("an error occured: \(error)") } })

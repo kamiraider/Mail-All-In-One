@@ -25,7 +25,7 @@ class TextFildMailController: UIViewController {
         postal.connect { result in return }
         
         let index = NSIndexSet(index: uid)
-        postal.fetchMessages(folder, uids: index as IndexSet, flags: [ .body ], onMessage: {
+        postal.fetchMessages(folder, uids: index as IndexSet, flags: [ .body ], onMessage: { [weak self]
             email in
             var messageBody: MailData?
             switch String(describing: email.body?.allParts.next()?.data?.encoding) {
@@ -39,8 +39,8 @@ class TextFildMailController: UIViewController {
                 break
             }
             let messageDecoded = String(data: (messageBody?.decodedData)!, encoding: .utf8)
-            self.messageBody.text! = messageDecoded!
-            self.selectAndSave(message: messageDecoded!)
+            self?.messageBody.text! = messageDecoded!
+            self?.selectAndSave(message: messageDecoded!)
         }, onComplete: {
             error in
             if let error = error {
